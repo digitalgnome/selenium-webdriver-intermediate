@@ -19,7 +19,7 @@ class DragAndDropPage {
         let draggable = this.driver.findElement(this.locators.draggable);
         let droppable = this.driver.findElement(this.locators.droppable);
         await this.driver
-            .actions()
+            .actions({bridge:true})
             .dragAndDrop(draggable, droppable)
             .perform();
     }
