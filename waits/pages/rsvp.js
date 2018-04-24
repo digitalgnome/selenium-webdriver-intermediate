@@ -1,6 +1,6 @@
 const {Browser, By, Key, until} = require("selenium-webdriver");
 
-const url = "https://treehouse-projects.github.io/rsvp/selenium-webdriver-wait/";
+const url = "https://treehouse-projects.github.io/selenium-webdriver-intermediate/waits/app/index.html";
 
 class RsvpPage {
     constructor(driver) {
