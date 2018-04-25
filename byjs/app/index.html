@@ -3,23 +3,19 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Demo app</title>
-    <style type="text/css">
-      a:before {
-        content: "[";
-      }
-      a:after {
-        content: "]";
-      }
-    </style>
   </head>
   <body>
-    <div class="content">
-      <p>
-        <a href="https://teamtreehouse.com">Treehouse</a>
-      </p>
-      <p>
-        <a href="https://teamtreehouse.com/library/introduction-to-selenium">Introduction to Selenium</a>
-      </p>
+    <div class="controls">
+      <button>Cancel</button>
+      <button>Save</button>
+      <span id="status"></span>
     </div>
+    <script type="text/javascript">
+      var button = document.getElementById('my-button');
+      button.addEventListener('click', function(e) {
+        var span = document.getElementById('status');
+        span.innerHTML = "Saved!";
+      });
+    </script>
   </body>
 </html>
