@@ -11,7 +11,7 @@
       <span id="status"></span>
     </div>
     <script type="text/javascript">
-      var button = document.getElementById('my-button');
+      var button = document.getElementsByTagName('button')[1];
       button.addEventListener('click', function(e) {
         var span = document.getElementById('status');
         span.innerHTML = "Saved!";
