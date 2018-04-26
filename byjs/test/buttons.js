@@ -17,7 +17,7 @@ suite(function(env) {
         it('Updates status text', async function() {
             await page.clickSave();
             let span = await driver.findElement(page.locators.status);
-            var text = await span.getText();
+            let text = await span.getText();
             assert(text.includes("Saved!"));
         });
 
