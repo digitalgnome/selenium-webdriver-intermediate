@@ -15,8 +15,6 @@ suite(function(env) {
         });
 
         it('loads existing invitations', async function() {
-            // Set AJAX delay to 3s then uncomment to demonstrate
-            // this.timeout(5000);
             let list = await driver.findElement(page.locators.invitedList);
             await driver.wait(
                 until.elementLocated(By.css('#invitedList li'))
